@@ -1,0 +1,71 @@
+# This file was created Fri Oct  7 10:51:46 2022
+# Created by:
+#                       :-) GROMACS - gmx msd, 2020.4 (-:
+# 
+# Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+# Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+# Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/wz2449/main/comp-lab-class/Week4/Setup/ions_water/gromacs
+# Command line:
+#   gmx_mpi msd -f unwrap.xtc -s step5_9.tpr -n unwrap.ndx -o msd_oxygen.xvg
+# gmx msd is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "Mean Square Displacement"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "MSD (nm\S2\N)"
+@TYPE xy
+# MSD gathered over 1000 ps with 51 restarts
+# Diffusion constants fitted from time 100 to 900 ps
+# D[       OH2] = 6.2350 (+/- 0.0997) (1e-5 cm^2/s)
+         0           0
+        20    0.746798
+        40     1.49165
+        60     2.23527
+        80     2.97795
+       100     3.71684
+       120     4.45648
+       140     5.19063
+       160     5.92745
+       180     6.66073
+       200     7.39606
+       220     8.13546
+       240     8.87242
+       260     9.60959
+       280      10.349
+       300     11.0857
+       320     11.8242
+       340     12.5696
+       360     13.3131
+       380     14.0648
+       400     14.8159
+       420     15.5678
+       440     16.3208
+       460     17.0728
+       480     17.8139
+       500     18.5523
+       520     19.2938
+       540     20.0444
+       560     20.8015
+       580     21.5519
+       600     22.3076
+       620     23.0608
+       640      23.808
+       660     24.5631
+       680     25.3235
+       700     26.0862
+       720     26.8407
+       740     27.5978
+       760     28.3638
+       780     29.1204
+       800     29.8611
+       820     30.6034
+       840     31.3458
+       860     32.1006
+       880     32.8317
+       900      33.587
+       920     34.3702
+       940     35.1124
+       960     35.8807
+       980     36.5963
+      1000     37.3818
