@@ -1,0 +1,59 @@
+
+include ${pot}.lmp
+include kalj.lmp
+units lj
+atom_style atomic
+
+variable dimensions equal 3
+variable density equal 1.2
+variable fraca equal 0.8
+
+dimension ${dimensions}
+dimension 3
+
+#setup box
+variable boxlength equal exp(ln(${volume})/${dimensions})
+variable boxlength equal exp(ln(300)/${dimensions})
+variable boxlength equal exp(ln(300)/3)
+variable ntypea equal floor(${fraca}*${natoms})
+variable ntypea equal floor(0.8*${natoms})
+variable ntypea equal floor(0.8*360)
+variable bstart equal ${ntypea}+1
+variable bstart equal 288+1
+variable ntypeb equal ${natoms}-${ntypea}
+variable ntypeb equal 360-${ntypea}
+variable ntypeb equal 360-288
+
+lattice fcc ${density}
+lattice fcc 1.2
+Lattice spacing in x,y,z = 1.4938016 1.4938016 1.4938016
+region box01 block 0 ${boxlength} 0 ${boxlength} 0 ${boxlength} units box
+region box01 block 0 6.69432950082169 0 ${boxlength} 0 ${boxlength} units box
+region box01 block 0 6.69432950082169 0 6.69432950082169 0 ${boxlength} units box
+region box01 block 0 6.69432950082169 0 6.69432950082169 0 6.69432950082169 units box
+create_box 2 box01 # 2 atomtypes
+Created orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  1 by 2 by 2 MPI processor grid
+create_atoms 1 box
+Created 365 atoms
+  using lattice units in orthogonal box = (0 0 0) to (6.6943295 6.6943295 6.6943295)
+  create_atoms CPU = 0.001 seconds
+
+set atom ${bstart}* type 2
+set atom 289* type 2
+Setting atom values ...
+  77 settings made for type
+group extra id > ${natoms}
+group extra id > 360
+5 atoms in group extra
+delete_atoms group extra
+Deleted 5 atoms, new total = 360
+group typea type 1
+288 atoms in group typea
+group typeb type 2
+72 atoms in group typeb
+
+include ${pot}_particles.lmp
+include kalj_particles.lmp
+ERROR on proc 0: Cannot open input script kalj_particles.lmp: No such file or directory (src/input.cpp:1023)
+Last command: kalj_particles.lmp
