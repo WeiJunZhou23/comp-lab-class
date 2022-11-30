@@ -1,0 +1,127 @@
+
+Host: cs013.hpc.nyu.edu
+
+Timers On : Tue Nov 15 15:03:56 2022
+Timers Off: Tue Nov 15 15:03:57 2022
+
+Wall Time:        0.34 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: cs013.hpc.nyu.edu
+
+Timers On : Tue Nov 15 15:05:04 2022
+Timers Off: Tue Nov 15 15:05:04 2022
+
+Wall Time:        0.34 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
+
+Host: cs013.hpc.nyu.edu
+
+Timers On : Tue Nov 15 15:04:54 2022
+Timers Off: Tue Nov 15 15:34:39 2022
+
+Wall Time:     1784.44 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+Total PK formation time             :     93.400u      0.233s     56.456w     60 calls
+Libint2ERI::Libint2ERI              :     18.983u      0.217s     11.487w    180 calls
+HF: Form core H                     :      0.217u      0.017s      0.179w     60 calls
+HF: Form S/X                        :      0.017u      0.000s      0.019w     60 calls
+HF: Guess                           :      5.800u      0.100s      3.554w     60 calls
+SAD Guess                           :      5.567u      0.083s      3.427w     60 calls
+HF: Form G                          :      1.350u      0.000s      0.688w    430 calls
+JK: D                               :      0.000u      0.000s      0.004w    430 calls
+JK: USO2AO                          :      0.083u      0.000s      0.027w    430 calls
+JK: JK                              :      1.200u      0.000s      0.610w    430 calls
+PK computes JK                      :      1.200u      0.000s      0.607w    430 calls
+JK: AO2USO                          :      0.033u      0.000s      0.029w    430 calls
+HF: Form F                          :      0.017u      0.000s      0.004w    430 calls
+HF: Form D                          :      0.000u      0.000s      0.003w    430 calls
+HF: DIIS                            :      1.967u      0.200s      1.374w    370 calls
+HF: Form C                          :      0.383u      0.000s      0.173w    370 calls
+ccenergy                            :      8.583u     10.083s     13.269w     60 calls
+F build                             :      0.617u      0.567s      0.641w    600 calls
+Wmbej build                         :      1.083u      0.983s      1.244w    600 calls
+C->Wmbej                            :      0.033u      0.050s      0.047w    600 calls
+F->Wmbej                            :      0.450u      0.700s      0.748w    600 calls
+E->Wmbej                            :      0.200u      0.117s      0.164w    600 calls
+X->Wmbej                            :      0.300u      0.100s      0.221w    600 calls
+Z                                   :      0.083u      0.033s      0.098w    600 calls
+T2 Build                            :      2.817u      3.400s      3.870w    600 calls
+BT2                                 :      1.267u      2.400s      2.426w    600 calls
+ABCD:new                            :      1.267u      2.400s      2.425w    600 calls
+ABCD:S                              :      0.183u      0.133s      0.260w    600 calls
+ABCD:A                              :      0.267u      0.217s      0.250w    600 calls
+ABCD:axpy                           :      0.717u      2.017s      1.795w    600 calls
+FT2                                 :      0.200u      0.050s      0.139w    600 calls
+WmbejT2                             :      0.400u      0.250s      0.326w    600 calls
+CT2                                 :      0.533u      0.450s      0.558w    600 calls
+cctriples                           :      3.783u      0.867s      3.099w     60 calls
+ET_RHF                              :      3.700u      0.500s      2.505w     60 calls
+
+--------------------------------------------------------------------------------------
+Total PK formation time             :     93.400u      0.233s     56.456w     60 calls
+| Libint2ERI::Libint2ERI            :     12.633u      0.150s      7.660w    120 calls
+HF: Form core H                     :      0.217u      0.017s      0.179w     60 calls
+HF: Form S/X                        :      0.017u      0.000s      0.019w     60 calls
+HF: Guess                           :      5.800u      0.100s      3.554w     60 calls
+| SAD Guess                         :      5.567u      0.083s      3.427w     60 calls
+HF: Form G                          :      1.350u      0.000s      0.688w    430 calls
+| JK: D                             :      0.000u      0.000s      0.004w    430 calls
+| JK: USO2AO                        :      0.083u      0.000s      0.027w    430 calls
+| JK: JK                            :      1.200u      0.000s      0.610w    430 calls
+| | PK computes JK                  :      1.200u      0.000s      0.607w    430 calls
+| JK: AO2USO                        :      0.033u      0.000s      0.029w    430 calls
+HF: Form F                          :      0.017u      0.000s      0.004w    430 calls
+HF: Form D                          :      0.000u      0.000s      0.003w    430 calls
+HF: DIIS                            :      1.967u      0.200s      1.374w    370 calls
+HF: Form C                          :      0.383u      0.000s      0.173w    370 calls
+Libint2ERI::Libint2ERI              :      6.350u      0.067s      3.827w     60 calls
+ccenergy                            :      8.583u     10.083s     13.269w     60 calls
+| F build                           :      0.617u      0.567s      0.641w    600 calls
+| Wmbej build                       :      1.083u      0.983s      1.244w    600 calls
+| | C->Wmbej                        :      0.033u      0.050s      0.047w    600 calls
+| | F->Wmbej                        :      0.450u      0.700s      0.748w    600 calls
+| | E->Wmbej                        :      0.200u      0.117s      0.164w    600 calls
+| | X->Wmbej                        :      0.300u      0.100s      0.221w    600 calls
+| Z                                 :      0.083u      0.033s      0.098w    600 calls
+| T2 Build                          :      2.817u      3.400s      3.870w    600 calls
+| | BT2                             :      1.267u      2.400s      2.426w    600 calls
+| | | ABCD:new                      :      1.267u      2.400s      2.425w    600 calls
+| | | | ABCD:S                      :      0.183u      0.133s      0.260w    600 calls
+| | | | ABCD:A                      :      0.267u      0.217s      0.250w    600 calls
+| | | | ABCD:axpy                   :      0.717u      2.017s      1.795w    600 calls
+| | FT2                             :      0.200u      0.050s      0.139w    600 calls
+| | WmbejT2                         :      0.400u      0.250s      0.326w    600 calls
+| | CT2                             :      0.533u      0.450s      0.558w    600 calls
+cctriples                           :      3.783u      0.867s      3.099w     60 calls
+| ET_RHF                            :      3.700u      0.500s      2.505w     60 calls
+
+**************************************************************************************
+
+Host: cs003.hpc.nyu.edu
+
+Timers On : Wed Nov 30 11:47:47 2022
+Timers Off: Wed Nov 30 11:47:47 2022
+
+Wall Time:        0.35 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+
+--------------------------------------------------------------------------------------
+
+**************************************************************************************
